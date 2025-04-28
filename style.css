@@ -1,281 +1,256 @@
-/* Reset General */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
+/* Tipografías */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #1A212C;
-  color: #CCCCCC;
-  line-height: 1.7;
-  overflow-x: hidden;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header */
 header {
-  position: fixed;
   width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: fixed;
   top: 0;
-  z-index: 1000;
-  background-color: rgba(26, 33, 44, 0.9);
-  padding: 20px 50px;
+  left: 0;
+  z-index: 999;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  backdrop-filter: blur(10px);
+  padding: 20px;
 }
 
 .logo-img {
   height: 50px;
 }
 
-nav {
-  display: flex;
-  gap: 30px;
-}
-
 nav a {
-  color: #C19A6B;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  position: relative;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-nav a::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #C19A6B;
-  left: 0;
-  bottom: -5px;
-  transition: 0.4s;
+nav a:hover {
+  color: #004aad; /* Azul elegante */
 }
 
-nav a:hover::after {
-  width: 100%;
-}
-
-/* HERO */
+/* Hero */
 .hero {
-  position: relative;
   height: 100vh;
-  overflow: hidden;
+  background: url('background.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
-#background-video {
+.background-image {
   position: absolute;
-  top: 0; left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: 1;
+  background: url('atardeceres-cdmx-2021-.jpg') center/cover no-repeat;
+  z-index: -2;
 }
 
 .hero-overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 3;
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
+  background: rgba(0,0,0,0.5);
+  z-index: -1;
 }
 
-.hero-logo {
-  width: 120px;
-  margin-bottom: 20px;
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
+.hero-content p {
   font-size: 1.5rem;
-  margin-bottom: 30px;
-  color: #C19A6B;
+  margin-bottom: 20px;
+}
+
+.cta-buttons, .contact-buttons {
+  margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary, .btn-whatsapp, .btn-linkedin {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-primary {
+  background: #004aad;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #003080;
+}
+
+.btn-secondary {
+  background: white;
+  color: #004aad;
+  border: 2px solid #004aad;
+}
+
+.btn-secondary:hover {
+  background: #004aad;
+  color: white;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background: #128C7E;
+}
+
+.btn-linkedin {
+  background: #0077B5;
+  color: white;
+}
+
+.btn-linkedin:hover {
+  background: #005983;
 }
 
 /* Secciones */
 .section {
-  padding: 100px 20px;
+  padding: 100px 20px 50px;
+  text-align: center;
+}
+
+.container {
   max-width: 1200px;
   margin: auto;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  text-align: center;
-  color: #FFFFFF;
-  margin-bottom: 50px;
-}
-
-/* Grid */
+/* Grids */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 /* Cards */
 .card {
-  background-color: #283040;
+  background: white;
   padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  transition: all 0.4s ease;
-  box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0px 15px 30px rgba(0,0,0,0.5);
+  transform: scale(1.03);
 }
 
-.card h3 {
-  margin-bottom: 15px;
-  color: #C19A6B;
-}
-
-.card p {
-  font-size: 1rem;
-}
-
-/* CTA Buttons */
-.cta-buttons {
-  display: flex;
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  z-index: 10000;
 }
 
-.btn-primary, .btn-secondary {
-  padding: 15px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
+.modal-content {
+  background: white;
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  text-align: left;
 }
 
-.btn-primary {
-  background-color: #C19A6B;
-  color: #1A212C;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #FFFFFF;
-  color: #1A212C;
-}
-
-.btn-secondary {
-  background: transparent;
-  border: 2px solid #C19A6B;
-  color: #C19A6B;
-}
-
-.btn-secondary:hover {
-  background-color: #C19A6B;
-  color: #1A212C;
-}
-
-/* Botones de contacto */
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+/* Formularios */
+.formulario-contacto {
   margin-top: 30px;
 }
 
-.btn-whatsapp, .btn-linkedin {
-  background-color: #1A212C;
-  border: 2px solid #C19A6B;
-  color: #C19A6B;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
+.form-row {
+  margin-bottom: 20px;
 }
 
-.btn-whatsapp:hover, .btn-linkedin:hover {
-  background-color: #C19A6B;
-  color: #1A212C;
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
 }
 
 /* Tabla Comparativa */
 .table-wrapper {
   overflow-x: auto;
+  margin-top: 30px;
 }
 
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #283040;
-  border-radius: 15px;
-  overflow: hidden;
 }
 
 .comparison-table th, .comparison-table td {
-  padding: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
   text-align: center;
-  border-bottom: 1px solid #394252;
-  color: #CCCCCC;
 }
 
 .comparison-table th {
-  background-color: #1A212C;
-  color: #C19A6B;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.comparison-table tr:hover {
-  background-color: #394252;
+  background: #004aad;
+  color: white;
 }
 
 /* Footer */
 footer {
+  padding: 30px 0;
+  background: #f1f1f1;
   text-align: center;
-  padding: 30px;
-  background-color: #1A212C;
-  color: #777;
   font-size: 0.9rem;
-  border-top: 1px solid #283040;
+  color: #555;
 }
-
-/* AOS Animaciones */
-[data-aos] {
-  opacity: 0;
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-[data-aos].aos-animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-

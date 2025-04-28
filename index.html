@@ -8,10 +8,17 @@
   <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    :target::before {
+      content: "";
+      display: block;
+      height: 120px; /* Altura del header */
+      margin: -120px 0 0;
+    }
+  </style>
 </head>
 <body>
 
-<!-- Header -->
 <header>
   <div class="header-container">
     <img src="logo.png" alt="Salvadé Ventures" class="logo-img">
@@ -26,7 +33,7 @@
   </div>
 </header>
 
-<!-- Hero Section -->
+<!-- HERO -->
 <section id="inicio" class="hero">
   <div class="background-image"></div>
   <div class="hero-overlay"></div>
@@ -45,7 +52,7 @@
   </div>
 </section>
 
-<!-- Quiénes Somos -->
+<!-- QUIÉNES SOMOS -->
 <section id="quienes-somos" class="section" data-aos="fade-up">
   <div class="container">
     <h2>Quiénes Somos</h2>
@@ -54,7 +61,7 @@
   </div>
 </section>
 
-<!-- Servicios -->
+<!-- SERVICIOS -->
 <section id="servicios" class="section" data-aos="fade-up">
   <div class="container">
     <h2>Servicios Estratégicos</h2>
@@ -79,36 +86,36 @@
   </div>
 </section>
 
-<!-- Entidades Disponibles -->
+<!-- ENTIDADES -->
 <section id="entidades" class="section" data-aos="fade-up">
   <div class="container">
     <h2>Entidades Disponibles</h2>
     <div class="grid">
       <div class="card entidad" onclick="openModal('SOFOM')">
         <h3>SOFOM</h3>
-        <p>Flexibilidad financiera para crédito, arrendamiento y factoraje.</p>
+        <p>Flexibilidad para otorgar crédito y arrendamiento financiero.</p>
       </div>
       <div class="card entidad" onclick="openModal('SOFIPO')">
         <h3>SOFIPO</h3>
-        <p>Captación de depósitos y otorgamiento de créditos.</p>
+        <p>Captación de depósitos regulados y crédito popular.</p>
       </div>
       <div class="card entidad" onclick="openModal('IFPE')">
         <h3>IFPE (Fintech)</h3>
-        <p>Innovación digital en medios de pago y custodia de fondos electrónicos.</p>
+        <p>Pagos electrónicos y custodia digital de fondos.</p>
       </div>
       <div class="card entidad" onclick="openModal('UnionCredito')">
         <h3>Unión de Crédito</h3>
-        <p>Financiamiento cooperativo a socios productivos.</p>
+        <p>Financiamiento cooperativo entre socios.</p>
       </div>
       <div class="card entidad" onclick="openModal('IFC')">
         <h3>IFC</h3>
-        <p>Inclusión financiera en comunidades rurales.</p>
+        <p>Servicios financieros para inclusión comunitaria.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Modal de Entidades -->
+<!-- MODAL -->
 <div id="modal" class="modal">
   <div id="modal-content" class="modal-content">
     <!-- Se rellena dinámicamente -->
@@ -116,71 +123,8 @@
   <button onclick="closeModal()" class="btn-secondary" style="margin:20px;">Cerrar</button>
 </div>
 
-<!-- Comparativa de Entidades -->
-<section id="tabla" class="section" data-aos="fade-up">
-  <div class="container">
-    <h2>Comparativo de Capacidades</h2>
-    <div class="table-wrapper">
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>Entidad</th>
-            <th>Captar Depósitos</th>
-            <th>Otorgar Crédito</th>
-            <th>Emitir Tarjetas</th>
-            <th>Facilitar Transferencias</th>
-            <th>Ventajas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>SOFOM</td>
-            <td>❌</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>Flexibilidad operativa</td>
-          </tr>
-          <tr>
-            <td>SOFIPO</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>Captación regulada</td>
-          </tr>
-          <tr>
-            <td>IFPE</td>
-            <td>✅ (electrónicos)</td>
-            <td>❌</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>Agilidad tecnológica</td>
-          </tr>
-          <tr>
-            <td>Unión de Crédito</td>
-            <td>✅ (socios)</td>
-            <td>✅</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>Cooperativismo financiero</td>
-          </tr>
-          <tr>
-            <td>IFC</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>❌</td>
-            <td>✅</td>
-            <td>Inclusión comunitaria</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- CTA Final -->
-<section id="contacto" class="section" data-aos="fade-up">
+<!-- CTA FINAL -->
+<section id="cta" class="section" data-aos="fade-up">
   <div class="container">
     <h2>¿Listo para transformar oportunidades en valor estratégico?</h2>
     <div class="cta-buttons">
@@ -194,13 +138,14 @@
   </div>
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
   <div class="container">
-    <p>© 2025 Salvadé Ventures. Strategic Financial Advisory. All rights reserved.</p>
+    <p>© 2025 Salvadé Ventures. Strategic Financial Advisory. Todos los derechos reservados.</p>
   </div>
 </footer>
 
+<!-- Scripts -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({ once: true, duration: 1200 });

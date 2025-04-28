@@ -8,6 +8,14 @@
   <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    :target::before {
+      content: "";
+      display: block;
+      height: 120px;
+      margin: -120px 0 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -28,23 +36,35 @@
 <section id="vende" class="section" data-aos="fade-up">
   <div class="container">
     <h2>Presentar Mi Empresa</h2>
-    <p>¿Buscas una salida estratégica o maximizar el valor de tu empresa? En Salvadé Ventures podemos ayudarte a estructurar la operación ideal. Completa el formulario y nos pondremos en contacto contigo con absoluta confidencialidad.</p>
+    <p>¿Buscás maximizar el valor de tu empresa o explorar una salida estratégica? En Salvadé Ventures podemos ayudarte a estructurar la operación ideal. Completá el siguiente formulario y nos pondremos en contacto contigo con absoluta confidencialidad.</p>
 
     <form action="https://formspree.io/f/xkgrgarv" method="POST" class="formulario-contacto">
-      <input type="text" name="name" placeholder="Tu Nombre Completo" required>
-      <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-      <input type="text" name="empresa" placeholder="Nombre de la Empresa" required>
-      <select name="tipo" required>
-        <option value="">Tipo de Entidad</option>
-        <option value="SOFOM">SOFOM</option>
-        <option value="SOFIPO">SOFIPO</option>
-        <option value="IFPE">IFPE</option>
-        <option value="Unión de Crédito">Unión de Crédito</option>
-        <option value="IFC">IFC</option>
-        <option value="Otra">Otra</option>
-      </select>
-      <textarea name="message" placeholder="Comentarios adicionales (ubicación, cartera, etc.)" required></textarea>
-      <button type="submit" class="btn-primary">Enviar Información</button>
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Tu Nombre Completo" required>
+      </div>
+      <div class="form-row">
+        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+      </div>
+      <div class="form-row">
+        <input type="text" name="empresa" placeholder="Nombre de la Empresa" required>
+      </div>
+      <div class="form-row">
+        <select name="tipo" required>
+          <option value="">Tipo de Entidad</option>
+          <option value="SOFOM">SOFOM</option>
+          <option value="SOFIPO">SOFIPO</option>
+          <option value="IFPE">IFPE</option>
+          <option value="Unión de Crédito">Unión de Crédito</option>
+          <option value="IFC">IFC</option>
+          <option value="Otra">Otra</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <textarea name="message" placeholder="Comentarios adicionales (ubicación, cartera, situación actual, etc.)" required></textarea>
+      </div>
+      <div class="form-row">
+        <button type="submit" class="btn-primary">Enviar Información</button>
+      </div>
     </form>
 
     <div class="contact-buttons">
@@ -57,7 +77,7 @@
 
 <footer>
   <div class="container">
-    <p>© 2025 Salvadé Ventures. Strategic Financial Advisory. All rights reserved.</p>
+    <p>© 2025 Salvadé Ventures. Strategic Financial Advisory. Todos los derechos reservados.</p>
   </div>
 </footer>
 
