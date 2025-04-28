@@ -26,6 +26,7 @@
       <a href="#quienes-somos">Quiénes Somos</a>
       <a href="#servicios">Servicios</a>
       <a href="#entidades">Entidades Disponibles</a>
+      <a href="vende-tu-empresa.html">Vende tu Empresa</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </div>
@@ -39,14 +40,47 @@
     <p class="slogan">Tailored Solutions for Strategic Acquisitions</p>
     <div class="cta-buttons">
       <a href="#entidades" class="btn-primary">Explorar Entidades</a>
-      <a href="contacto.html" class="btn-secondary">Contáctanos</a>
+      <a href="vende-tu-empresa.html" class="btn-secondary">Presentar Mi Empresa</a>
+    </div>
+  </div>
+</section>
+
+<!-- Quiénes Somos -->
+<section id="quienes-somos" class="section" data-aos="fade-up">
+  <div class="container">
+    <h2>Quiénes Somos</h2>
+    <p>Salvadé Ventures, es una firma boutique dedicada a ofrecer asesoría exclusiva en fusiones y adquisiciones; una firma especializada en la originación, estructuración y ejecución de oportunidades estratégicas en el sector financiero. Contamos con una profunda experiencia en la venta de entidades financieras con más de 16 millones de dolares en ventas concretadas. Nuestro enfoque combina agilidad, excelencia operativa y compromiso con la confidencialidad, permitiendo a nuestros clientes acceder a oportunidades únicas en el mercado mexicano y latinoamericano.</p>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="section" data-aos="fade-up">
+  <div class="container">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>M&A de Entidades Financieras</h3>
+        <p>Asesoramos en la compra, venta y fusión de entidades financieras reguladas, adaptándonos a cada estructura y necesidad específica.</p>
+      </div>
+      <div class="card">
+        <h3>Originación de Oportunidades</h3>
+        <p>Identificamos activos estratégicos antes de que lleguen al mercado, garantizando acceso a transacciones exclusivas.</p>
+      </div>
+      <div class="card">
+        <h3>Consultoría Estratégica</h3>
+        <p>Brindamos asesoría especializada para la expansión, transformación o fortalecimiento de negocios financieros.</p>
+      </div>
+      <div class="card">
+        <h3>Reestructuración Empresarial</h3>
+        <p>Asistimos en procesos de reorganización corporativa y optimización financiera para maximizar valor en situaciones críticas.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Entidades Disponibles -->
-<section id="entidades" class="section">
-  <div class="container" data-aos="fade-up">
+<section id="entidades" class="section" data-aos="fade-up">
+  <div class="container">
     <h2>Entidades Disponibles</h2>
     <div class="grid">
       <div class="card entidad" onclick="openModal('SOFOM')">
@@ -73,16 +107,10 @@
   </div>
 </section>
 
-<!-- Modal SOFOM -->
+<!-- Modal para Entidades -->
 <div id="modal" class="modal">
   <div class="modal-content" id="modal-content">
-    <h2>Formulario SOFOM</h2>
-    <form action="https://formspree.io/f/xzzrzqrd" method="POST">
-      <input type="text" name="name" placeholder="Tu Nombre" required>
-      <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-      <textarea name="message" placeholder="Información adicional sobre SOFOM" required></textarea>
-      <button type="submit" class="btn-primary">Enviar</button>
-    </form>
+    <!-- Se rellena dinámicamente -->
   </div>
   <button onclick="closeModal()" class="btn-secondary" style="margin:20px;">Cerrar</button>
 </div>
@@ -96,3 +124,4 @@
 
 </body>
 </html>
+
