@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vender Mi Empresa - Salvadé Ventures</title>
+  <title>Presentar Mi Entidad - Salvadé Ventures</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,13 +26,14 @@
 <section id="vender" class="section">
   <div class="container" data-aos="fade-up">
     <h2>Presentar Mi Entidad Financiera</h2>
-    <p>Si deseas vender tu entidad financiera o empresa regulada, completa el siguiente formulario. Evaluaremos tu oportunidad estratégicamente y te contactaremos de forma personalizada.</p>
+    <p>¿Tienes una entidad financiera o empresa regulada que deseas vender? Completa el formulario y nuestro equipo evaluará tu oportunidad de forma estratégica y personalizada.</p>
+    
     <form action="https://formspree.io/f/your-form-id" method="POST" class="formulario-vender">
       <input type="text" name="name" placeholder="Tu Nombre Completo" required>
-      <input type="email" name="email" placeholder="Tu Email" required>
+      <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
       <input type="text" name="empresa" placeholder="Nombre de la Empresa o Entidad" required>
       <select name="tipo" required>
-        <option value="">Selecciona el Tipo de Entidad</option>
+        <option value="">Tipo de Entidad</option>
         <option value="SOFOM">SOFOM</option>
         <option value="SOFIPO">SOFIPO</option>
         <option value="IFPE">IFPE (Fintech)</option>
@@ -40,7 +41,7 @@
         <option value="IFC">IFC</option>
         <option value="Otra">Otra</option>
       </select>
-      <textarea name="message" placeholder="Detalles relevantes (por ejemplo: tamaño de cartera, antigüedad, ubicación)"></textarea>
+      <textarea name="message" placeholder="Información adicional (por ejemplo: tamaño de cartera, antigüedad, estado de licencias, ubicación)" required></textarea>
       <button type="submit" class="btn-primary">Enviar Información</button>
     </form>
   </div>
