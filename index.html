@@ -5,17 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salvadé Ventures</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-
-<!-- Loader -->
-<div id="loader">
-  <div class="loader-container">
-    <object data="logo-animado.svg" type="image/svg+xml" class="logo-animado"></object>
-  </div>
-</div>
 
 <!-- Header -->
 <header>
@@ -35,7 +29,8 @@
 <!-- Hero Section -->
 <section id="inicio" class="hero">
   <div class="overlay"></div>
-  <div class="hero-content">
+  <div class="hero-content" data-aos="fade-up">
+    <img src="logotipo-solo.png" alt="Salvadé Ventures Logo" class="hero-logo">
     <h1>Salvadé Ventures</h1>
     <p class="slogan">Tailored Solutions for Strategic Acquisitions</p>
     <div class="cta-buttons">
@@ -49,9 +44,12 @@
 <section id="quienes-somos" class="section" data-aos="fade-up">
   <div class="container">
     <h2>Quiénes Somos</h2>
-    <p>Salvadé Ventures, es una firma boutique dedicada a ofrecer asesoría exclusiva en fusiones y adquisiciones; una firma especializada en la originación, estructuración y ejecución de oportunidades estratégicas en el sector financiero. Contamos con una profunda experiencia en la venta de entidades financieras con más de 16 millones de dolares en ventas concretadas. Nuestro enfoque combina agilidad, excelencia operativa y compromiso con la confidencialidad, permitiendo a nuestros clientes acceder a oportunidades únicas en el mercado mexicano y latinoamericano.</p>
+    <p>En Salvadé Ventures, creemos que cada transacción es mucho más que un intercambio de activos: es una transformación estratégica. Fundada sobre los principios de excelencia, confidencialidad y visión de largo plazo, nuestra firma boutique ha construido un legado ayudando a empresarios y grupos financieros a capitalizar oportunidades únicas en mercados altamente regulados.</p>
+    <p>Guiados por Manuel Salvadé, un referente en originación de deals estratégicos en América Latina, acompañamos a nuestros clientes a través de procesos de adquisición, venta y reestructuración con una precisión quirúrgica. Nuestra especialidad es identificar activos de alto valor oculto —entidades financieras como SOFOMES, SOFIPOS, IFPEs, IFCs y Uniones de Crédito— y orquestar su transferencia de manera ágil, segura y con el máximo retorno para nuestros clientes.</p>
+    <p>Más que asesores, somos arquitectos de movimientos estratégicos que redefinen el futuro de nuestros clientes. Cada proyecto que emprendemos lleva la impronta de nuestro compromiso: construir valor real donde otros ven solo transacciones.</p>
   </div>
 </section>
+
 
 <!-- Servicios -->
 <section id="servicios" class="section" data-aos="fade-up">
@@ -60,19 +58,19 @@
     <div class="grid">
       <div class="card">
         <h3>M&A de Entidades Financieras</h3>
-        <p>Asesoramos en la compra, venta y fusión de entidades financieras reguladas, adaptándonos a cada estructura y necesidad específica.</p>
+        <p>Compra, venta y fusión de SOFOMES, SOFIPOS, IFPEs, IFCs y Uniones de Crédito.</p>
       </div>
       <div class="card">
         <h3>Originación de Oportunidades</h3>
-        <p>Identificamos activos estratégicos antes de que lleguen al mercado, garantizando acceso a transacciones exclusivas.</p>
+        <p>Acceso a activos estratégicos antes de su oferta pública.</p>
       </div>
       <div class="card">
         <h3>Consultoría Estratégica</h3>
-        <p>Brindamos asesoría especializada para la expansión, transformación o fortalecimiento de negocios financieros.</p>
+        <p>Expansión, transformación y fortalecimiento de operaciones financieras.</p>
       </div>
       <div class="card">
         <h3>Reestructuración Empresarial</h3>
-        <p>Asistimos en procesos de reorganización corporativa y optimización financiera para maximizar valor en situaciones críticas.</p>
+        <p>Reorganización corporativa para maximizar el valor en situaciones críticas.</p>
       </div>
     </div>
   </div>
@@ -110,7 +108,7 @@
 <!-- Modal para Entidades -->
 <div id="modal" class="modal">
   <div class="modal-content" id="modal-content">
-    <!-- Se rellena dinámicamente -->
+    <!-- Contenido dinámico -->
   </div>
   <button onclick="closeModal()" class="btn-secondary" style="margin:20px;">Cerrar</button>
 </div>
@@ -121,6 +119,14 @@
     <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
   </div>
 </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1200,
+  });
+</script>
 
 </body>
 </html>
