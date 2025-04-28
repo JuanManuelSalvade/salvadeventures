@@ -5,66 +5,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salvadé Ventures</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Header de navegación -->
-  <header>
-    <h1>Salvadé Ventures</h1>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#quienes-somos">Quiénes Somos</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
 
-  <!-- Sección Hero (Inicio) -->
-  <section id="inicio" class="hero">
-    <h2>Impulsando el Futuro de la Innovación</h2>
-    <p>Consultoría estratégica, originación de oportunidades y M&A de alta categoría.</p>
-  </section>
+<!-- Loader -->
+<div id="loader">
+  <div class="logo">SV</div>
+</div>
 
-  <!-- Sección Quiénes Somos -->
-  <section id="quienes-somos">
-    <h2>Quiénes Somos</h2>
-    <p>En Salvadé Ventures combinamos visión estratégica, expertise regulatorio y acceso exclusivo a oportunidades de alto valor. Nuestra misión es transformar el mercado de fusiones y adquisiciones con un enfoque boutique, ágil y personalizado.</p>
-  </section>
+<!-- Header -->
+<header>
+  <div class="logo-header">Salvadé Ventures</div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#quienes-somos">Quiénes Somos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#entidades">Tipos de Entidades</a>
+    <a href="#vender">Vende tu Empresa</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
 
-  <!-- Sección Servicios -->
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li><strong>Fusiones y Adquisiciones (M&A):</strong> Facilitamos procesos de compra-venta estratégicos, maximizando el valor para ambas partes.</li>
-      <li><strong>Originación de Deals:</strong> Identificamos oportunidades exclusivas antes que lleguen al mercado.</li>
-      <li><strong>Consultoría Estratégica:</strong> Acompañamos a empresas en procesos de expansión, reestructuración y optimización.</li>
-    </ul>
-  </section>
+<!-- Hero Section -->
+<section id="inicio" class="hero">
+  <h1>Salvadé Ventures</h1>
+  <p>Tailored Solutions for Mergers & Acquisitions</p>
+</section>
 
-  <!-- Sección Proyectos / Pipeline -->
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-    <p>Trabajamos en oportunidades únicas en sectores financieros, tecnológicos e industriales. Contactanos para conocer nuestro pipeline actual y cómo podemos sumar valor a tu estrategia de inversión.</p>
-  </section>
+<!-- Quiénes Somos -->
+<section id="quienes-somos">
+  <h2>Quiénes Somos</h2>
+  <p>Salvadé Ventures es una firma boutique de M&A enfocada en originar, estructurar y ejecutar transacciones estratégicas de entidades financieras reguladas en América Latina. Brindamos asesoría ágil, precisa y exclusiva para maximizar el valor de cada operación.</p>
+</section>
 
-  <!-- Sección Contacto -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Tu Nombre" required>
-      <input type="email" name="email" placeholder="Tu Email" required>
-      <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <div class="contact-links">
-      <a href="https://wa.me/tu-numero-de-whatsapp" target="_blank">WhatsApp</a> |
-      <a href="https://www.linkedin.com/company/salvade-ventures/" target="_blank">LinkedIn</a>
+<!-- Servicios -->
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="servicios-grid">
+    <div class="servicio-card">
+      <h3>Fusiones y Adquisiciones (M&A)</h3>
+      <p>Asesoría completa en compra-venta de activos financieros estratégicos.</p>
     </div>
-  </section>
+    <div class="servicio-card">
+      <h3>Originación de Oportunidades</h3>
+      <p>Identificamos oportunidades exclusivas antes de llegar al mercado.</p>
+    </div>
+    <div class="servicio-card">
+      <h3>Consultoría Estratégica</h3>
+      <p>Optimización estructural y expansión corporativa.</p>
+    </div>
+    <div class="servicio-card">
+      <h3>Consultoría en Reestructuración</h3>
+      <p>Asistencia integral en procesos de reorganización empresarial.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
-  </footer>
+<!-- Tipos de Entidades -->
+<section id="entidades">
+  <h2>Tipos de Entidades</h2>
+  <div class="entidades-grid">
+    <div class="entidad-card" onclick="openModal('SOFOM')">
+      <h3>SOFOM</h3>
+      <p>Sociedad Financiera de Objeto Múltiple</p>
+    </div>
+    <div class="entidad-card" onclick="openModal('SOFIPO')">
+      <h3>SOFIPO</h3>
+      <p>Sociedad Financiera Popular</p>
+    </div>
+    <div class="entidad-card" onclick="openModal('IFPE')">
+      <h3>IFPE (Fintech)</h3>
+      <p>Institución de Fondos de Pago Electrónico</p>
+    </div>
+    <div class="entidad-card" onclick="openModal('UnionCredito')">
+      <h3>Unión de Crédito</h3>
+      <p>Unión de instituciones de financiamiento</p>
+    </div>
+    <div class="entidad-card" onclick="openModal('IFC')">
+      <h3>IFC</h3>
+      <p>Institución Financiera Comunitaria</p>
+    </div>
+    <div class="entidad-card" onclick="openModal('Otros')">
+      <h3>Otros</h3>
+      <p>Entidades Especiales</p>
+    </div>
+  </div>
+</section>
+
+<!-- Tabla Comparativa -->
+<section id="comparativa">
+  <h2>Comparativa de Capacidades</h2>
+  <table>
+    <tr>
+      <th>Entidad</th>
+      <th>Captar Depósitos</th>
+      <th>Emitir Tarjetas</th>
+      <th>Otorgar Créditos</th>
+      <th>Custodiar Fondos</th>
+      <th>Flexibilidad Operativa</th>
+    </tr>
+    <tr>
+      <td>SOFOM</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>Alta</td>
+    </tr>
+    <tr>
+      <td>SOFIPO</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>Media</td>
+    </tr>
+    <tr>
+      <td>IFPE (Fintech)</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>Alta</td>
+    </tr>
+    <tr>
+      <td>Unión de Crédito</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>Baja</td>
+    </tr>
+    <tr>
+      <td>IFC</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>Media</td>
+    </tr>
+    <tr>
+      <td>Otros</td><td>Depende</td><td>Depende</td><td>Depende</td><td>Depende</td><td>Variable</td>
+    </tr>
+  </table>
+</section>
+
+<!-- Vender tu Empresa -->
+<section id="vender">
+  <h2>¿Tienes una entidad financiera que deseas vender?</h2>
+  <p>Completa el formulario y nuestro equipo evaluará tu caso de forma personalizada.</p>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Nombre Completo" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="entidad" placeholder="Tipo de Entidad" required>
+    <textarea name="message" placeholder="Mensaje"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- Contacto General -->
+<section id="contacto">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Tu Nombre" required>
+    <input type="email" name="email" placeholder="Tu Email" required>
+    <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div class="contacto-links">
+    <a href="https://wa.me/5492236689748" target="_blank">WhatsApp</a> |
+    <a href="https://www.linkedin.com/company/salvade-ventures/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Modal Structure (para modales de entidades) -->
+<div id="modal" class="modal">
+  <div class="modal-content" id="modal-content">
+    <!-- Acá se llena dinámicamente -->
+  </div>
+  <button onclick="closeModal()">Cerrar</button>
+</div>
+
 </body>
 </html>
