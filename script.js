@@ -17,7 +17,7 @@ function openModal(entidad) {
         <h2>SOFOM</h2>
         <p><strong>Sociedades Financieras de Objeto Múltiple</strong></p>
         <p>Especializadas en crédito, arrendamiento y factoraje. Flexibilidad operativa alta.</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <form action="https://formspree.io/f/xzzrzqrd" method="POST">
           <input type="hidden" name="entidad" value="SOFOM">
           <input type="text" name="name" placeholder="Tu Nombre" required>
           <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
@@ -32,7 +32,7 @@ function openModal(entidad) {
         <h2>SOFIPO</h2>
         <p><strong>Sociedades Financieras Populares</strong></p>
         <p>Autorizadas para captar depósitos y otorgar crédito. Regulación estricta.</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <form action="https://formspree.io/f/xeogowga" method="POST">
           <input type="hidden" name="entidad" value="SOFIPO">
           <input type="text" name="name" placeholder="Tu Nombre" required>
           <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
@@ -47,7 +47,7 @@ function openModal(entidad) {
         <h2>IFPE (Fintech)</h2>
         <p><strong>Instituciones de Fondos de Pago Electrónico</strong></p>
         <p>Custodian fondos digitales, permiten transferencias electrónicas seguras.</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <form action="https://formspree.io/f/movdvzdd" method="POST">
           <input type="hidden" name="entidad" value="IFPE">
           <input type="text" name="name" placeholder="Tu Nombre" required>
           <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
@@ -62,7 +62,7 @@ function openModal(entidad) {
         <h2>Unión de Crédito</h2>
         <p><strong>Uniones Cooperativas</strong></p>
         <p>Asociaciones que otorgan financiamiento a socios específicos.</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <form action="https://formspree.io/f/xgvkvbky" method="POST">
           <input type="hidden" name="entidad" value="Unión de Crédito">
           <input type="text" name="name" placeholder="Tu Nombre" required>
           <input type="email" name="email" placeholder="Tu Correo Electrónico" required>

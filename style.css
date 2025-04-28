@@ -255,27 +255,6 @@ td {
   background-color: #1A212C;
 }
 
-/* CTA Vender */
-.cta-vender {
-  background-color: #C19A6B;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.cta-vender h2 {
-  color: #1A212C;
-  margin-bottom: 30px;
-}
-
-/* Footer */
-footer {
-  background-color: #1A212C;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #C19A6B;
-}
-
 /* Modal */
 .modal {
   display: none;
@@ -303,20 +282,6 @@ footer {
 .modal-content input,
 .modal-content textarea,
 .modal-content select {
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  background: #1A212C;
-  border: 1px solid #C19A6B;
-  color: #FFFFFF;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-/* Inputs Formularios */
-form input,
-form textarea,
-form select {
   width: 100%;
   padding: 15px;
   margin: 10px 0;
