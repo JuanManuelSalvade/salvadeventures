@@ -10,49 +10,47 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #1A212C;
   color: #CCCCCC;
-  line-height: 1.6;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
 /* Header */
 header {
-  background-color: #1A212C;
-  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(26, 33, 44, 0.9);
+  padding: 20px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid #283040;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
+  backdrop-filter: blur(10px);
 }
 
 .logo-img {
   height: 50px;
-  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
 }
 
 nav a {
   color: #C19A6B;
-  margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  position: relative;
-  transition: color 0.3s;
   font-size: 1rem;
+  position: relative;
 }
 
 nav a::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0%;
   height: 2px;
-  background: #C19A6B;
+  background-color: #C19A6B;
   left: 0;
   bottom: -5px;
   transition: 0.4s;
@@ -62,67 +60,63 @@ nav a:hover::after {
   width: 100%;
 }
 
-nav a:hover {
-  color: #FFFFFF;
-}
-
-/* Hero Section */
+/* HERO */
 .hero {
   position: relative;
-  background: url('https://mxc.com.mx/wp-content/uploads/2024/08/atardeceres-cdmx-2021-.jpg') no-repeat center center/cover;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
   overflow: hidden;
 }
 
-.overlay {
+#background-video {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(26, 33, 44, 0.7);
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 1;
 }
 
-.hero-content {
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
 
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 4rem;
-  color: #FFFFFF;
-  animation: fadeInDown 1s ease forwards;
-}
-
-.hero .slogan {
-  font-size: 1.5rem;
-  color: #C19A6B;
-  margin: 20px 0;
-  animation: fadeInUp 1s ease forwards;
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
 
 .hero-logo {
   width: 120px;
   margin-bottom: 20px;
-  animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #C19A6B;
 }
 
 /* Secciones */
 .section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   max-width: 1200px;
   margin: auto;
-}
-
-.section h2 {
-  color: #FFFFFF;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-  text-align: center;
 }
 
 .container {
@@ -130,10 +124,19 @@ nav a:hover {
   margin: auto;
 }
 
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 40px;
 }
 
 /* Cards */
@@ -143,29 +146,38 @@ nav a:hover {
   border-radius: 15px;
   text-align: center;
   transition: all 0.4s ease;
-  box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
 }
 
 .card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.5);
 }
 
 .card h3 {
-  color: #C19A6B;
   margin-bottom: 15px;
+  color: #C19A6B;
 }
 
-/* Botones */
+.card p {
+  font-size: 1rem;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .btn-primary, .btn-secondary {
   padding: 15px 30px;
   border-radius: 30px;
-  font-weight: bold;
   text-decoration: none;
-  margin: 10px;
-  display: inline-block;
+  font-weight: bold;
   font-size: 1rem;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
@@ -178,44 +190,17 @@ nav a:hover {
 .btn-primary:hover {
   background-color: #FFFFFF;
   color: #1A212C;
-  transform: scale(1.05);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #C19A6B;
   border: 2px solid #C19A6B;
+  color: #C19A6B;
 }
 
 .btn-secondary:hover {
   background-color: #C19A6B;
   color: #1A212C;
-  transform: scale(1.05);
-}
-
-/* Contacto y Vender Empresa */
-.formulario-contacto {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.formulario-contacto input,
-.formulario-contacto select,
-.formulario-contacto textarea {
-  width: 100%;
-  padding: 15px;
-  background: #1A212C;
-  border: 1px solid #C19A6B;
-  color: #FFFFFF;
-  font-size: 1rem;
-  border-radius: 10px;
-}
-
-.formulario-contacto textarea {
-  min-height: 150px;
-  resize: vertical;
 }
 
 /* Botones de contacto */
@@ -242,43 +227,51 @@ nav a:hover {
   color: #1A212C;
 }
 
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 2000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(26, 33, 44, 0.9);
-  overflow-y: auto;
+/* Tabla Comparativa */
+.table-wrapper {
+  overflow-x: auto;
 }
 
-.modal-content {
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
   background-color: #283040;
-  margin: 5% auto;
-  padding: 30px;
-  width: 90%;
-  max-width: 1000px;
-  color: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #394252;
+  color: #CCCCCC;
+}
+
+.comparison-table th {
+  background-color: #1A212C;
+  color: #C19A6B;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.comparison-table tr:hover {
+  background-color: #394252;
 }
 
 /* Footer */
 footer {
-  padding: 20px;
-  background-color: #1A212C;
   text-align: center;
-  border-top: 1px solid #283040;
-  font-size: 0.9rem;
+  padding: 30px;
+  background-color: #1A212C;
   color: #777;
+  font-size: 0.9rem;
+  border-top: 1px solid #283040;
 }
 
-/* Animaciones */
+/* AOS Animaciones */
 [data-aos] {
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 [data-aos].aos-animate {
@@ -286,33 +279,3 @@ footer {
   transform: translateY(0);
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
