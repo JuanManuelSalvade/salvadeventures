@@ -3,22 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Presentar Mi Empresa - Salvadé Ventures</title>
+  <title>Presentar Mi Empresa | Salvadé Ventures</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <style>
-    :target::before {
-      content: "";
-      display: block;
-      height: 120px;
-      margin: -120px 0 0;
-    }
-  </style>
 </head>
 <body>
 
+<!-- Header -->
 <header>
   <div class="header-container">
     <img src="logo.png" alt="Salvadé Ventures" class="logo-img">
@@ -27,20 +19,21 @@
       <a href="index.html#quienes-somos">Quiénes Somos</a>
       <a href="index.html#servicios">Servicios</a>
       <a href="index.html#entidades">Entidades</a>
-      <a href="vende-tu-empresa.html">Vender Mi Empresa</a>
+      <a href="vende-tu-empresa.html">Vende tu Empresa</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </div>
 </header>
 
-<section id="vende" class="section" data-aos="fade-up">
+<!-- Sección Presentar Empresa -->
+<section class="section" data-aos="fade-up" style="margin-top:80px;">
   <div class="container">
     <h2>Presentar Mi Empresa</h2>
-    <p>¿Buscás maximizar el valor de tu empresa o explorar una salida estratégica? En Salvadé Ventures podemos ayudarte a estructurar la operación ideal. Completá el siguiente formulario y nos pondremos en contacto contigo con absoluta confidencialidad.</p>
+    <p>Complete el siguiente formulario para que podamos evaluar su empresa de manera personalizada. Su información será tratada con absoluta confidencialidad.</p>
 
     <form action="https://formspree.io/f/xkgrgarv" method="POST" class="formulario-contacto">
       <div class="form-row">
-        <input type="text" name="name" placeholder="Tu Nombre Completo" required>
+        <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
       </div>
       <div class="form-row">
         <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
@@ -60,31 +53,22 @@
         </select>
       </div>
       <div class="form-row">
-        <textarea name="message" placeholder="Comentarios adicionales (ubicación, cartera, situación actual, etc.)" required></textarea>
+        <textarea name="comentarios" placeholder="Comentarios Adicionales"></textarea>
       </div>
       <div class="form-row">
-        <button type="submit" class="btn-primary">Enviar Información</button>
+        <button type="submit" class="btn-primary">Enviar Mensaje</button>
       </div>
     </form>
-
-    <div class="contact-buttons">
-      <a href="https://wa.me/5492236689748?text=Hola%20Salvadé%20Ventures%2C%20estoy%20interesado%20en%20presentar%20mi%20empresa%20para%20una%20posible%20venta." target="_blank" class="btn-whatsapp">Hablar por WhatsApp</a>
-      <a href="https://www.linkedin.com/company/salvade-ventures" target="_blank" class="btn-linkedin">Visitar LinkedIn</a>
-    </div>
-
   </div>
 </section>
 
+<!-- Footer -->
 <footer>
   <div class="container">
-    <p>© 2025 Salvadé Ventures. Strategic Financial Advisory. Todos los derechos reservados.</p>
+    <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
   </div>
 </footer>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({ once: true, duration: 1200 });
-</script>
-
 </body>
 </html>
+

@@ -8,8 +8,8 @@
 /* Tipografías */
 body {
   font-family: 'Roboto', sans-serif;
-  background: #0f1722; /* Azul oscuro real */
-  color: #c2a176; /* Dorado real */
+  background: #0f1722;
+  color: white;
   line-height: 1.6;
 }
 
@@ -27,7 +27,7 @@ a {
 header {
   width: 100%;
   background: #0f1722;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -64,6 +64,7 @@ nav a:hover {
   background: url('atardeceres-cdmx-2021-.jpg') center/cover no-repeat;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -79,12 +80,13 @@ nav a:hover {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 20px;
 }
 
@@ -92,55 +94,42 @@ nav a:hover {
   margin-top: 20px;
 }
 
-.btn-primary, .btn-secondary, .btn-whatsapp, .btn-linkedin {
+.btn-primary, .btn-secondary {
   display: inline-block;
   margin: 10px;
   padding: 12px 25px;
   font-size: 1rem;
   border-radius: 30px;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
   cursor: pointer;
-}
-
-/* Botones propios */
-.btn-primary {
   background: #c2a176;
   color: #0f1722;
-}
-
-.btn-primary:hover {
-  background: white;
-  color: #0f1722;
-}
-
-.btn-secondary {
-  background: transparent;
-  color: #c2a176;
   border: 2px solid #c2a176;
 }
 
-.btn-secondary:hover {
+.btn-primary:hover, .btn-secondary:hover {
+  background: white;
+  color: #0f1722;
+  transform: scale(1.05);
+}
+
+/* WhatsApp y LinkedIn */
+.btn-whatsapp, .btn-linkedin {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
   background: #c2a176;
   color: #0f1722;
+  border: 2px solid #c2a176;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
 }
 
-/* Botones externos */
-.btn-whatsapp {
-  background: #25D366;
-  color: white;
-}
-
-.btn-whatsapp:hover {
-  background: #128C7E;
-}
-
-.btn-linkedin {
-  background: #0077B5;
-  color: white;
-}
-
-.btn-linkedin:hover {
-  background: #005983;
+.btn-whatsapp:hover, .btn-linkedin:hover {
+  background: white;
+  color: #0f1722;
+  transform: scale(1.05);
 }
 
 /* Secciones */
@@ -164,17 +153,17 @@ nav a:hover {
 
 /* Cards */
 .card {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
   border: 2px solid #c2a176;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.03);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Modal */
@@ -235,7 +224,7 @@ textarea {
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
-  background: #0f1722;
+  background: rgba(255,255,255,0.05);
   color: #c2a176;
 }
 
@@ -246,8 +235,8 @@ textarea {
 }
 
 .comparison-table th {
-  background: #0f1722;
-  color: #c2a176;
+  background: rgba(255,255,255,0.1);
+  font-size: 1.1rem;
 }
 
 /* Footer */
@@ -258,3 +247,4 @@ footer {
   font-size: 0.9rem;
   color: #c2a176;
 }
+

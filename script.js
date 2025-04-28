@@ -1,4 +1,4 @@
-// Abrir Modal con Contenido de Entidades
+// Modal Functions
 function openModal(entidad) {
   const modal = document.getElementById('modal');
   const content = document.getElementById('modal-content');
@@ -10,19 +10,19 @@ function openModal(entidad) {
       info = `
         <h2>SOFOM</h2>
         <p><strong>Sociedades Financieras de Objeto Múltiple</strong></p>
-        <p>Especializadas en otorgamiento de crédito, arrendamiento financiero y factoraje. Ofrecen flexibilidad regulatoria sin captación de depósitos.</p>
+        <p>Especializadas en otorgamiento de crédito, arrendamiento financiero y factoraje. Ofrecen flexibilidad regulatoria alta.</p>
         <form action="https://formspree.io/f/xzzrzqrd" method="POST" class="formulario-contacto">
           <div class="form-row">
-            <input type="text" name="name" placeholder="Tu Nombre Completo" required>
+            <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
           </div>
           <div class="form-row">
             <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
           </div>
           <div class="form-row">
-            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+            <textarea name="mensaje" placeholder="Escribe tu Mensaje" required></textarea>
           </div>
           <div class="form-row">
-            <button type="submit" class="btn-primary">Solicitar Información</button>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
           </div>
         </form>
       `;
@@ -32,19 +32,19 @@ function openModal(entidad) {
       info = `
         <h2>SOFIPO</h2>
         <p><strong>Sociedades Financieras Populares</strong></p>
-        <p>Autorizadas para captar depósitos y otorgar créditos regulados por CNBV, con altos estándares de supervisión financiera.</p>
+        <p>Autorizadas para captar depósitos y otorgar crédito bajo regulación estricta de la CNBV.</p>
         <form action="https://formspree.io/f/xeogowga" method="POST" class="formulario-contacto">
           <div class="form-row">
-            <input type="text" name="name" placeholder="Tu Nombre Completo" required>
+            <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
           </div>
           <div class="form-row">
             <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
           </div>
           <div class="form-row">
-            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+            <textarea name="mensaje" placeholder="Escribe tu Mensaje" required></textarea>
           </div>
           <div class="form-row">
-            <button type="submit" class="btn-primary">Solicitar Información</button>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
           </div>
         </form>
       `;
@@ -54,19 +54,19 @@ function openModal(entidad) {
       info = `
         <h2>IFPE (Fintech)</h2>
         <p><strong>Instituciones de Fondos de Pago Electrónico</strong></p>
-        <p>Operan transferencias electrónicas de fondos, custodia digital y emisión de tarjetas virtuales. Altamente dinámicas en el ecosistema Fintech.</p>
+        <p>Especializadas en la administración de fondos digitales y transferencias electrónicas.</p>
         <form action="https://formspree.io/f/movdvzdd" method="POST" class="formulario-contacto">
           <div class="form-row">
-            <input type="text" name="name" placeholder="Tu Nombre Completo" required>
+            <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
           </div>
           <div class="form-row">
             <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
           </div>
           <div class="form-row">
-            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+            <textarea name="mensaje" placeholder="Escribe tu Mensaje" required></textarea>
           </div>
           <div class="form-row">
-            <button type="submit" class="btn-primary">Solicitar Información</button>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
           </div>
         </form>
       `;
@@ -75,20 +75,20 @@ function openModal(entidad) {
     case 'UnionCredito':
       info = `
         <h2>Unión de Crédito</h2>
-        <p><strong>Uniones Cooperativas de Crédito</strong></p>
-        <p>Financiamiento colectivo entre socios de actividades productivas, promoviendo acceso a crédito y fortalecimiento sectorial.</p>
+        <p><strong>Asociaciones de Financiamiento Cooperativo</strong></p>
+        <p>Otorgan crédito exclusivamente a sus socios, bajo un esquema cooperativo.</p>
         <form action="https://formspree.io/f/xgvkvbky" method="POST" class="formulario-contacto">
           <div class="form-row">
-            <input type="text" name="name" placeholder="Tu Nombre Completo" required>
+            <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
           </div>
           <div class="form-row">
             <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
           </div>
           <div class="form-row">
-            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+            <textarea name="mensaje" placeholder="Escribe tu Mensaje" required></textarea>
           </div>
           <div class="form-row">
-            <button type="submit" class="btn-primary">Solicitar Información</button>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
           </div>
         </form>
       `;
@@ -98,19 +98,19 @@ function openModal(entidad) {
       info = `
         <h2>IFC</h2>
         <p><strong>Instituciones Financieras Comunitarias</strong></p>
-        <p>Enfocadas en la inclusión financiera de comunidades rurales, ofreciendo servicios básicos y promoción de ahorro y crédito responsable.</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST" class="formulario-contacto">
+        <p>Instituciones enfocadas en fomentar el acceso al financiamiento en comunidades específicas.</p>
+        <form action="https://formspree.io/f/xkgrgarv" method="POST" class="formulario-contacto">
           <div class="form-row">
-            <input type="text" name="name" placeholder="Tu Nombre Completo" required>
+            <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
           </div>
           <div class="form-row">
             <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
           </div>
           <div class="form-row">
-            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+            <textarea name="mensaje" placeholder="Escribe tu Mensaje" required></textarea>
           </div>
           <div class="form-row">
-            <button type="submit" class="btn-primary">Solicitar Información</button>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
           </div>
         </form>
       `;
@@ -122,14 +122,6 @@ function openModal(entidad) {
 }
 
 function closeModal() {
-  const modal = document.getElementById('modal');
-  modal.style.display = "none";
+  document.getElementById('modal').style.display = "none";
 }
 
-// AOS Inicialización
-document.addEventListener('DOMContentLoaded', () => {
-  AOS.init({
-    once: true,
-    duration: 1200,
-  });
-});
