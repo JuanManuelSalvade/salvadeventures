@@ -53,7 +53,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #004aad; /* Azul elegante */
+  color: #1d3557; /* Azul real Salvade Ventures */
 }
 
 /* Hero */
@@ -108,22 +108,22 @@ nav a:hover {
 }
 
 .btn-primary {
-  background: #004aad;
+  background: #1d3557; /* Azul real Salvade Ventures */
   color: white;
 }
 
 .btn-primary:hover {
-  background: #003080;
+  background: #12243a;
 }
 
 .btn-secondary {
   background: white;
-  color: #004aad;
-  border: 2px solid #004aad;
+  color: #1d3557;
+  border: 2px solid #1d3557;
 }
 
 .btn-secondary:hover {
-  background: #004aad;
+  background: #1d3557;
   color: white;
 }
 
@@ -242,7 +242,7 @@ textarea {
 }
 
 .comparison-table th {
-  background: #004aad;
+  background: #1d3557; /* Azul real Salvade Ventures */
   color: white;
 }
 
