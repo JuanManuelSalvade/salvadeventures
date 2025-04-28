@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salvadé Ventures</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- Loader -->
 <div id="loader">
-  <div class="logo-loader">SV</div>
+  <div class="loader-container">
+    <div class="logo-light-trail">
+      <img src="logotipo-solo.png" alt="Logotipo Salvadé Ventures">
+      <div class="light-effect"></div>
+    </div>
+  </div>
 </div>
 
 <!-- Header -->
@@ -24,7 +29,7 @@
       <a href="#quienes-somos">Quiénes Somos</a>
       <a href="#servicios">Servicios</a>
       <a href="#entidades">Entidades Disponibles</a>
-      <a href="#contacto">Contacto</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
   </div>
 </header>
@@ -44,7 +49,7 @@
 
 <!-- Quiénes Somos -->
 <section id="quienes-somos" class="section">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <h2>Quiénes Somos</h2>
     <p>
       Salvadé Ventures es una firma boutique especializada en fusiones y adquisiciones estratégicas de entidades financieras. Nuestro enfoque combina agilidad, acceso exclusivo a oportunidades y profundo conocimiento del marco normativo en América Latina.<br><br>
@@ -57,7 +62,7 @@
 
 <!-- Servicios -->
 <section id="servicios" class="section">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <h2>Servicios</h2>
     <div class="grid">
       <div class="card">
@@ -82,7 +87,7 @@
 
 <!-- Entidades Disponibles -->
 <section id="entidades" class="section">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <h2>Entidades Disponibles</h2>
     <div class="grid">
       <div class="card entidad" onclick="openModal('SOFOM')">
@@ -109,9 +114,9 @@
   </div>
 </section>
 
-<!-- Comparativa -->
+<!-- Comparativa de Entidades -->
 <section id="comparativa" class="section">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <h2>Comparativa de Entidades</h2>
     <table>
       <thead>
@@ -134,8 +139,8 @@
   </div>
 </section>
 
-<!-- CTA Vender -->
-<section class="cta-vender">
+<!-- CTA Final -->
+<section class="cta-vender" data-aos="fade-up">
   <h2>¿Deseas vender tu entidad financiera?</h2>
   <a href="vende-tu-empresa.html" class="btn-primary">Presentar Mi Entidad</a>
 </section>
@@ -147,12 +152,12 @@
   </div>
 </footer>
 
-<!-- Modal de entidades -->
+<!-- Modal -->
 <div id="modal" class="modal">
   <div class="modal-content" id="modal-content">
-    <!-- Se carga dinámicamente -->
+    <!-- Contenido dinámico -->
   </div>
-  <button onclick="closeModal()" class="btn-secondary">Cerrar</button>
+  <button onclick="closeModal()" class="btn-secondary" style="margin:20px;">Cerrar</button>
 </div>
 
 </body>

@@ -10,6 +10,16 @@
 </head>
 <body>
 
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-container">
+    <div class="logo-light-trail">
+      <img src="logotipo-solo.png" alt="Logotipo Salvadé Ventures">
+      <div class="light-effect"></div>
+    </div>
+  </div>
+</div>
+
 <!-- Header -->
 <header>
   <div class="header-container">
@@ -24,23 +34,29 @@
   </div>
 </header>
 
-<!-- Contacto Section -->
+<!-- Sección de Contacto -->
 <section id="contacto" class="section">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <h2>Contacto</h2>
-    <p>Completa el formulario y nuestro equipo se pondrá en contacto contigo.</p>
-    
+    <p>Completa el formulario y uno de nuestros especialistas se pondrá en contacto contigo a la brevedad.</p>
+
     <form action="https://formspree.io/f/your-form-id" method="POST" class="formulario-contacto">
+
       <input type="text" name="name" placeholder="Tu Nombre Completo" required>
+
       <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-      <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+
+      <textarea name="message" placeholder="¿En qué podemos ayudarte?" required></textarea>
+
       <button type="submit" class="btn-primary">Enviar Mensaje</button>
+
     </form>
 
     <div class="contacto-links" style="margin-top: 40px;">
       <a href="https://wa.me/5492236689748" target="_blank" class="btn-secondary">WhatsApp</a>
       <a href="https://www.linkedin.com/company/salvade-ventures/" target="_blank" class="btn-secondary" style="margin-left: 10px;">LinkedIn</a>
     </div>
+
   </div>
 </section>
 
