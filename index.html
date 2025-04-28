@@ -44,44 +44,6 @@
   </div>
 </section>
 
-<!-- Quiénes Somos -->
-<section id="quienes-somos" class="section">
-  <div class="container" data-aos="fade-up">
-    <h2>Quiénes Somos</h2>
-    <p>
-      Salvadé Ventures es una firma boutique especializada en fusiones y adquisiciones estratégicas de entidades financieras. Nuestro enfoque combina agilidad, acceso exclusivo a oportunidades y profundo conocimiento del marco normativo en América Latina.<br><br>
-      Con más de una década de experiencia, acompañamos a corporativos, family offices y fondos de inversión en la identificación, evaluación y adquisición de activos financieros de alto valor.<br><br>
-      Nuestro compromiso es construir soluciones hechas a medida, anticipando las necesidades del mercado y generando resultados que trascienden las expectativas.<br><br>
-      Nos enfocamos en construir relaciones de largo plazo, basadas en confianza, transparencia y excelencia operativa.
-    </p>
-  </div>
-</section>
-
-<!-- Servicios -->
-<section id="servicios" class="section">
-  <div class="container" data-aos="fade-up">
-    <h2>Servicios</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>M&A (Fusiones y Adquisiciones)</h3>
-        <p>Asesoría integral en procesos de compra y venta de entidades financieras.</p>
-      </div>
-      <div class="card">
-        <h3>Originación de Oportunidades</h3>
-        <p>Identificación y calificación de activos estratégicos listos para adquisición.</p>
-      </div>
-      <div class="card">
-        <h3>Consultoría Estratégica</h3>
-        <p>Optimización de estructuras corporativas y procesos regulatorios.</p>
-      </div>
-      <div class="card">
-        <h3>Consultoría en Reestructuración</h3>
-        <p>Asistencia en reorganización financiera y operativa de entidades.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Entidades Disponibles -->
 <section id="entidades" class="section">
   <div class="container" data-aos="fade-up">
@@ -111,36 +73,19 @@
   </div>
 </section>
 
-<!-- Comparativa -->
-<section id="comparativa" class="section">
-  <div class="container" data-aos="fade-up">
-    <h2>Comparativa de Entidades</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Entidad</th>
-          <th>Captar Depósitos</th>
-          <th>Otorgar Créditos</th>
-          <th>Emitir Tarjetas</th>
-          <th>Custodiar Fondos</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>SOFOM</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td></tr>
-        <tr><td>SOFIPO</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-        <tr><td>IFPE</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr>
-        <tr><td>Unión de Crédito</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td></tr>
-        <tr><td>IFC</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td></tr>
-      </tbody>
-    </table>
+<!-- Modal SOFOM -->
+<div id="modal" class="modal">
+  <div class="modal-content" id="modal-content">
+    <h2>Formulario SOFOM</h2>
+    <form action="https://formspree.io/f/xzzrzqrd" method="POST">
+      <input type="text" name="name" placeholder="Tu Nombre" required>
+      <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+      <textarea name="message" placeholder="Información adicional sobre SOFOM" required></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
   </div>
-</section>
-
-<!-- CTA Vender -->
-<section class="cta-vender" data-aos="fade-up">
-  <h2>¿Deseas vender tu entidad financiera?</h2>
-  <a href="vende-tu-empresa.html" class="btn-primary">Presentar Mi Entidad</a>
-</section>
+  <button onclick="closeModal()" class="btn-secondary" style="margin:20px;">Cerrar</button>
+</div>
 
 <!-- Footer -->
 <footer>
@@ -148,14 +93,6 @@
     <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
   </div>
 </footer>
-
-<!-- Modal -->
-<div id="modal" class="modal">
-  <div class="modal-content" id="modal-content">
-    <!-- Cargado dinámicamente -->
-  </div>
-  <button onclick="closeModal()" class="btn-secondary" style="margin:20px;">Cerrar</button>
-</div>
 
 </body>
 </html>
