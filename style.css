@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +46,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid #283040;
 }
 
 .header-container {
@@ -64,8 +65,8 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
   position: relative;
+  transition: color 0.3s;
 }
 
 nav a::after {
@@ -83,47 +84,39 @@ nav a:hover::after {
   width: 100%;
 }
 
+nav a:hover {
+  color: #FFFFFF;
+}
+
 /* Hero */
 .hero {
   position: relative;
   background: url('https://mxc.com.mx/wp-content/uploads/2024/08/atardeceres-cdmx-2021-.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 20px;
+  overflow: hidden;
 }
 
-.hero::after {
-  content: "";
+.overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(26, 33, 44, 0.7);
+  z-index: 1;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 10;
+  z-index: 2;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  color: #FFFFFF;
   font-size: 4rem;
+  color: #FFFFFF;
   animation: fadeInDown 1s ease forwards;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .slogan {
@@ -131,17 +124,6 @@ nav a:hover::after {
   color: #C19A6B;
   margin: 20px 0;
   animation: fadeInUp 1s ease forwards;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .cta-buttons {
@@ -156,7 +138,7 @@ nav a:hover::after {
   margin: 10px;
   display: inline-block;
   font-size: 1rem;
-  transition: 0.3s;
+  transition: all 0.4s ease;
 }
 
 .btn-primary {
@@ -171,9 +153,9 @@ nav a:hover::after {
 }
 
 .btn-secondary {
-  background-color: transparent;
-  border: 2px solid #C19A6B;
+  background: transparent;
   color: #C19A6B;
+  border: 2px solid #C19A6B;
 }
 
 .btn-secondary:hover {
@@ -186,7 +168,6 @@ nav a:hover::after {
   padding: 80px 20px;
   max-width: 1200px;
   margin: auto;
-  text-align: center;
 }
 
 .section h2 {
@@ -194,9 +175,15 @@ nav a:hover::after {
   font-family: 'Playfair Display', serif;
   margin-bottom: 40px;
   font-size: 2.5rem;
+  text-align: center;
 }
 
-/* Grid General */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -209,13 +196,13 @@ nav a:hover::after {
   padding: 30px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: all 0.4s ease;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
 }
 
 .card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
 }
 
 .card h3 {
@@ -275,8 +262,8 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(26, 33, 44, 0.95);
+  background-color: rgba(26, 33, 44, 0.9);
+  overflow-y: auto;
 }
 
 .modal-content {
@@ -290,7 +277,43 @@ footer {
   border-radius: 10px;
 }
 
-/* Animaciones scroll básicas */
+.modal-content input, 
+.modal-content textarea, 
+.modal-content select {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  background: #1A212C;
+  border: 1px solid #C19A6B;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* AOS Animation replacement */
 [data-aos] {
   opacity: 0;
   transition: opacity 0.6s ease, transform 0.6s ease;

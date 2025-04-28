@@ -5,35 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Presentar Mi Entidad - Salvadé Ventures</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- Header -->
 <header>
   <div class="header-container">
-    <img src="logo.png" alt="Logo Salvadé Ventures" class="logo-img">
+    <img src="logo.png" alt="Salvadé Ventures" class="logo-img">
     <nav>
       <a href="index.html#inicio">Inicio</a>
       <a href="index.html#quienes-somos">Quiénes Somos</a>
       <a href="index.html#servicios">Servicios</a>
-      <a href="index.html#entidades">Entidades a la Venta</a>
+      <a href="index.html#entidades">Entidades</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </div>
 </header>
 
-<!-- Vender Mi Empresa Section -->
+<!-- Presentar Mi Entidad Section -->
 <section id="vender" class="section">
-  <div class="container" data-aos="fade-up">
+  <div class="container">
     <h2>Presentar Mi Entidad Financiera</h2>
-    <p>¿Tienes una entidad financiera o empresa regulada que deseas vender? Completa el formulario y nuestro equipo evaluará tu oportunidad de forma estratégica y personalizada.</p>
+    <p>Si deseas vender tu entidad financiera o empresa regulada, completa el formulario y nuestro equipo evaluará tu oportunidad estratégicamente.</p>
     
     <form action="https://formspree.io/f/your-form-id" method="POST" class="formulario-vender">
       <input type="text" name="name" placeholder="Tu Nombre Completo" required>
       <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
       <input type="text" name="empresa" placeholder="Nombre de la Empresa o Entidad" required>
+      
       <select name="tipo" required>
-        <option value="">Tipo de Entidad</option>
+        <option value="">Selecciona el Tipo de Entidad</option>
         <option value="SOFOM">SOFOM</option>
         <option value="SOFIPO">SOFIPO</option>
         <option value="IFPE">IFPE (Fintech)</option>
@@ -41,7 +44,8 @@
         <option value="IFC">IFC</option>
         <option value="Otra">Otra</option>
       </select>
-      <textarea name="message" placeholder="Información adicional (por ejemplo: tamaño de cartera, antigüedad, estado de licencias, ubicación)" required></textarea>
+
+      <textarea name="message" placeholder="Información adicional (ej: tamaño de cartera, antigüedad, ubicación)" required></textarea>
       <button type="submit" class="btn-primary">Enviar Información</button>
     </form>
   </div>
