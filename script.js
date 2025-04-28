@@ -1,17 +1,7 @@
-// Espera a que todos los elementos (imágenes, scripts, etc.) estén cargados
-window.addEventListener("load", () => {
+// Loader Fade Out
+window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
-  
-  // Después de que todo se cargue, elimina la clase fade-out
   loader.classList.add('fade-out');
-  
-  // Aseguramos que el contenido de la página se habilite
-  document.body.style.overflow = 'auto';
-
-  // Elimina completamente el loader después de 3 segundos (tiempo de la animación)
-  setTimeout(() => {
-    loader.style.display = 'none';
-  }, 3000); // Ajusta este tiempo si lo necesitas
 });
 
 // Modal Functions
