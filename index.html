@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salvadé Ventures - Strategic Financial Advisory</title>
+  <title>Salvadé Ventures</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <style>
-    :target::before {
-      content: "";
-      display: block;
-      height: 120px; /* Altura del header */
-      margin: -120px 0 0;
-    }
-  </style>
 </head>
 <body>
 
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-container">
+    <object data="logo-animado.svg" type="image/svg+xml" class="logo-animado"></object>
+  </div>
+</div>
+
+<!-- Header -->
 <header>
   <div class="header-container">
     <img src="logo.png" alt="Salvadé Ventures" class="logo-img">
@@ -27,103 +26,89 @@
       <a href="#quienes-somos">Quiénes Somos</a>
       <a href="#servicios">Servicios</a>
       <a href="#entidades">Entidades</a>
-      <a href="vende-tu-empresa.html">Vender Mi Empresa</a>
+      <a href="vende-tu-empresa.html">Vende tu Empresa</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- Hero Section -->
 <section id="inicio" class="hero">
-  <div class="background-image"></div>
   <div class="hero-overlay"></div>
-  <div class="hero-content" data-aos="fade-up">
-    <img src="logotipo-solo.png" alt="Salvadé Ventures Logo" class="hero-logo">
+  <div class="hero-content">
     <h1>Salvadé Ventures</h1>
-    <p>Strategic Financial Advisory for Elite Transactions</p>
+    <p class="slogan">Strategy and Financial Advisory for High Impact Transactions</p>
     <div class="cta-buttons">
       <a href="#entidades" class="btn-primary">Explorar Entidades</a>
       <a href="vende-tu-empresa.html" class="btn-secondary">Presentar Mi Empresa</a>
     </div>
-    <div class="contact-buttons">
-      <a href="https://wa.me/5492236689748?text=Hola%20Salvadé%20Ventures%2C%20estoy%20interesado%20en%20conocer%20más%20sobre%20sus%20oportunidades." target="_blank" class="btn-whatsapp">Hablar por WhatsApp</a>
-      <a href="https://www.linkedin.com/company/salvade-ventures" target="_blank" class="btn-linkedin">Visitar LinkedIn</a>
-    </div>
   </div>
 </section>
 
-<!-- QUIÉNES SOMOS -->
+<!-- Quiénes Somos -->
 <section id="quienes-somos" class="section" data-aos="fade-up">
   <div class="container">
     <h2>Quiénes Somos</h2>
     <p>Salvadé Ventures es una firma boutique que redefine el asesoramiento financiero estratégico. Fundada por Juan Manuel Salvadé, nuestra misión es transformar oportunidades en valor real a través de procesos de M&A, originación de activos y reestructuración corporativa, manteniendo siempre la más estricta confidencialidad y excelencia en ejecución.</p>
-    <p>Con más de 16 millones de dolares en deals cerrados de experiencia y profundo conocimiento del mercado latinoamericano, especialmente en el sector financiero y bancario, identificamos y ejecutamos transacciones de alto impacto para inversores, empresarios y grupos estratégicos.</p>
+    <p>Con más de 16 millones de dolares en deals cerrados de experiencia y profundo conocimiento del mercado latinoamericano, especialmente en el sector financiero y bancario, identificamos y ejecutamos transacciones de alto impacto para inversores, empresarios y grupos estratégicos</p>
   </div>
 </section>
 
-<!-- SERVICIOS -->
+<!-- Servicios -->
 <section id="servicios" class="section" data-aos="fade-up">
   <div class="container">
-    <h2>Servicios Estratégicos</h2>
+    <h2>Servicios</h2>
     <div class="grid">
       <div class="card">
-        <h3>Fusiones y Adquisiciones</h3>
-        <p>Compra y venta de entidades financieras bajo estructuras a medida.</p>
+        <h3>M&A de Entidades Financieras</h3>
+        <p>Asesoramos en procesos de adquisición, fusión o venta de instituciones financieras, asegurando resultados estratégicos y efectivos.</p>
       </div>
       <div class="card">
         <h3>Originación de Oportunidades</h3>
-        <p>Acceso anticipado a activos estratégicos antes de su oferta pública.</p>
+        <p>Detectamos activos financieros exclusivos, antes de que lleguen al mercado abierto, para nuestros clientes institucionales.</p>
       </div>
       <div class="card">
         <h3>Consultoría Estratégica</h3>
-        <p>Reposicionamiento de negocios financieros para maximizar valor.</p>
+        <p>Acompañamos la expansión y transformación de grupos financieros a través de estrategias de crecimiento y optimización.</p>
       </div>
       <div class="card">
-        <h3>Reestructuración Corporativa</h3>
-        <p>Optimización de estructuras financieras en situaciones críticas.</p>
+        <h3>Reestructuración Empresarial</h3>
+        <p>Intervenimos en situaciones críticas, redefiniendo estructuras y asegurando la continuidad operativa y financiera de los negocios.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ENTIDADES -->
+<!-- Entidades Disponibles -->
 <section id="entidades" class="section" data-aos="fade-up">
   <div class="container">
     <h2>Entidades Disponibles</h2>
     <div class="grid">
       <div class="card entidad" onclick="openModal('SOFOM')">
         <h3>SOFOM</h3>
-        <p>Flexibilidad para otorgar crédito y arrendamiento financiero.</p>
+        <p>Sociedades Financieras de Objeto Múltiple</p>
       </div>
       <div class="card entidad" onclick="openModal('SOFIPO')">
         <h3>SOFIPO</h3>
-        <p>Captación de depósitos regulados y crédito popular.</p>
+        <p>Sociedades Financieras Populares</p>
       </div>
       <div class="card entidad" onclick="openModal('IFPE')">
         <h3>IFPE (Fintech)</h3>
-        <p>Pagos electrónicos y custodia digital de fondos.</p>
+        <p>Instituciones de Fondos de Pago Electrónico</p>
       </div>
       <div class="card entidad" onclick="openModal('UnionCredito')">
         <h3>Unión de Crédito</h3>
-        <p>Financiamiento cooperativo entre socios.</p>
+        <p>Asociaciones de Financiamiento Cooperativo</p>
       </div>
       <div class="card entidad" onclick="openModal('IFC')">
         <h3>IFC</h3>
-        <p>Servicios financieros para inclusión comunitaria.</p>
+        <p>Instituciones Financieras Comunitarias</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MODAL -->
-<div id="modal" class="modal">
-  <div id="modal-content" class="modal-content">
-    <!-- Se rellena dinámicamente -->
-  </div>
-  <button onclick="closeModal()" class="btn-secondary" style="margin:20px;">Cerrar</button>
-</div>
-
-<!-- Comparativa de Capacidades -->
+<!-- Tabla Comparativa -->
 <section id="tabla" class="section" data-aos="fade-up">
   <div class="container">
     <h2>Comparativo de Capacidades</h2>
@@ -186,34 +171,33 @@
   </div>
 </section>
 
-
-<!-- CTA FINAL -->
-<section id="cta" class="section" data-aos="fade-up">
+<!-- Footer Call to Action -->
+<section class="section" data-aos="fade-up">
   <div class="container">
     <h2>¿Listo para transformar oportunidades en valor estratégico?</h2>
-    <div class="cta-buttons">
+    <div class="contact-buttons">
       <a href="vende-tu-empresa.html" class="btn-primary">Presentar Mi Empresa</a>
       <a href="contacto.html" class="btn-secondary">Solicitar Información</a>
-    </div>
-    <div class="contact-buttons">
-      <a href="https://wa.me/5492236689748?text=Hola%20Salvadé%20Ventures%2C%20quiero%20ponerme%20en%20contacto%20con%20ustedes%20para%20recibir%20más%20información." target="_blank" class="btn-whatsapp">Hablar por WhatsApp</a>
-      <a href="https://www.linkedin.com/company/salvade-ventures" target="_blank" class="btn-linkedin">Visitar LinkedIn</a>
+      <a href="https://wa.me/5492236689748?text=Hola%2C%20quiero%20hablar%20con%20Salvad%C3%A9%20Ventures" class="btn-whatsapp" target="_blank">Hablar por WhatsApp</a>
+      <a href="https://www.linkedin.com/company/salvade-ventures" class="btn-linkedin" target="_blank">Visitar LinkedIn</a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer>
   <div class="container">
-    <p>© 2025 Salvadé Ventures. Strategic Financial Advisory. Todos los derechos reservados.</p>
+    <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
   </div>
 </footer>
 
-<!-- Scripts -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({ once: true, duration: 1200 });
-</script>
+<!-- Modal para Entidades -->
+<div id="modal" class="modal">
+  <div class="modal-content" id="modal-content">
+    <!-- Se llena dinámicamente -->
+  </div>
+  <button onclick="closeModal()" class="btn-secondary" style="margin:20px;">Cerrar</button>
+</div>
 
 </body>
 </html>
