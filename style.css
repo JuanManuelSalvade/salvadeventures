@@ -8,8 +8,8 @@
 /* Tipografías */
 body {
   font-family: 'Roboto', sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  background: #1d3557; /* Fondo azul real de Salvade Ventures */
+  color: white;
   line-height: 1.6;
 }
 
@@ -25,7 +25,7 @@ a {
 /* Header */
 header {
   width: 100%;
-  background: #fff;
+  background: #1d3557;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
@@ -49,17 +49,18 @@ header {
 nav a {
   margin-left: 20px;
   font-weight: 500;
+  color: white;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #1d3557; /* Azul real Salvade Ventures */
+  color: #a8dadc; /* Azul claro al pasar mouse */
 }
 
 /* Hero */
 .hero {
   height: 100vh;
-  background: url('background.jpg') center/cover no-repeat;
+  background: url('atardeceres-cdmx-2021-.jpg') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -69,18 +70,14 @@ nav a:hover {
 }
 
 .background-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url('atardeceres-cdmx-2021-.jpg') center/cover no-repeat;
-  z-index: -2;
+  display: none; /* Ya usamos el hero directamente */
 }
 
 .hero-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.4);
   z-index: -1;
 }
 
@@ -105,26 +102,28 @@ nav a:hover {
   font-size: 1rem;
   border-radius: 30px;
   transition: background 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .btn-primary {
-  background: #1d3557; /* Azul real Salvade Ventures */
-  color: white;
+  background: #a8dadc; /* Azul más claro para botones */
+  color: #1d3557;
 }
 
 .btn-primary:hover {
-  background: #12243a;
+  background: white;
+  color: #1d3557;
 }
 
 .btn-secondary {
   background: white;
   color: #1d3557;
-  border: 2px solid #1d3557;
+  border: 2px solid #a8dadc;
 }
 
 .btn-secondary:hover {
-  background: #1d3557;
-  color: white;
+  background: #a8dadc;
+  color: #1d3557;
 }
 
 .btn-whatsapp {
@@ -166,15 +165,17 @@ nav a:hover {
 
 /* Cards */
 .card {
-  background: white;
+  background: #1d3557;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
+  border: 1px solid #a8dadc;
 }
 
 .card:hover {
   transform: scale(1.03);
+  background: #12243a;
 }
 
 /* Modal */
@@ -191,12 +192,13 @@ nav a:hover {
 }
 
 .modal-content {
-  background: white;
+  background: #1d3557;
   padding: 40px;
   width: 90%;
   max-width: 600px;
   border-radius: 20px;
   text-align: left;
+  color: white;
 }
 
 /* Formularios */
@@ -217,6 +219,7 @@ textarea {
   border-radius: 10px;
   border: 1px solid #ccc;
   font-size: 1rem;
+  color: #333;
 }
 
 textarea {
@@ -233,24 +236,26 @@ textarea {
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
+  background: #1d3557;
+  color: white;
 }
 
 .comparison-table th, .comparison-table td {
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #a8dadc;
   text-align: center;
 }
 
 .comparison-table th {
-  background: #1d3557; /* Azul real Salvade Ventures */
-  color: white;
+  background: #1d3557;
+  color: #a8dadc;
 }
 
 /* Footer */
 footer {
   padding: 30px 0;
-  background: #f1f1f1;
+  background: #1d3557;
   text-align: center;
   font-size: 0.9rem;
-  color: #555;
+  color: white;
 }
