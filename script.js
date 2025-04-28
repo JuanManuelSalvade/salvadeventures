@@ -10,11 +10,11 @@ function openModal(entidad) {
       info = `
         <h2>SOFOM</h2>
         <p><strong>Sociedades Financieras de Objeto Múltiple</strong></p>
-        <p>Flexibilidad para otorgar créditos, realizar arrendamientos financieros y factoraje.</p>
+        <p>Especializadas en otorgamiento de crédito, arrendamiento financiero y factoraje. Ofrecen flexibilidad regulatoria.</p>
         <form action="https://formspree.io/f/xzzrzqrd" method="POST" class="formulario-contacto">
           <input type="text" name="name" placeholder="Tu Nombre" required>
           <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-          <textarea name="message" placeholder="Mensaje o detalles de tu interés" required></textarea>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
           <button type="submit" class="btn-primary">Solicitar Información</button>
         </form>
       `;
@@ -24,11 +24,11 @@ function openModal(entidad) {
       info = `
         <h2>SOFIPO</h2>
         <p><strong>Sociedades Financieras Populares</strong></p>
-        <p>Autorizadas a captar depósitos del público y otorgar crédito bajo regulación CNBV.</p>
+        <p>Autorizadas para captar depósitos y otorgar créditos. Altamente reguladas por CNBV.</p>
         <form action="https://formspree.io/f/xeogowga" method="POST" class="formulario-contacto">
           <input type="text" name="name" placeholder="Tu Nombre" required>
           <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-          <textarea name="message" placeholder="Mensaje o detalles de tu interés" required></textarea>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
           <button type="submit" class="btn-primary">Solicitar Información</button>
         </form>
       `;
@@ -38,11 +38,11 @@ function openModal(entidad) {
       info = `
         <h2>IFPE (Fintech)</h2>
         <p><strong>Instituciones de Fondos de Pago Electrónico</strong></p>
-        <p>Custodian fondos digitales, realizan pagos electrónicos, emiten tarjetas prepagadas.</p>
+        <p>Custodian fondos digitales, permiten transferencias electrónicas y emiten tarjetas prepago.</p>
         <form action="https://formspree.io/f/movdvzdd" method="POST" class="formulario-contacto">
           <input type="text" name="name" placeholder="Tu Nombre" required>
           <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-          <textarea name="message" placeholder="Mensaje o detalles de tu interés" required></textarea>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
           <button type="submit" class="btn-primary">Solicitar Información</button>
         </form>
       `;
@@ -52,11 +52,11 @@ function openModal(entidad) {
       info = `
         <h2>Unión de Crédito</h2>
         <p><strong>Uniones Cooperativas</strong></p>
-        <p>Otorgan financiamiento directo entre socios para impulsar sectores económicos específicos.</p>
+        <p>Otorgan financiamiento entre socios de sectores productivos, con esquemas de apoyo mutuo.</p>
         <form action="https://formspree.io/f/xgvkvbky" method="POST" class="formulario-contacto">
           <input type="text" name="name" placeholder="Tu Nombre" required>
           <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-          <textarea name="message" placeholder="Mensaje o detalles de tu interés" required></textarea>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
           <button type="submit" class="btn-primary">Solicitar Información</button>
         </form>
       `;
@@ -66,11 +66,11 @@ function openModal(entidad) {
       info = `
         <h2>IFC</h2>
         <p><strong>Instituciones Financieras Comunitarias</strong></p>
-        <p>Brindan acceso a servicios financieros en comunidades de baja bancarización.</p>
+        <p>Brindan acceso financiero en zonas rurales y comunidades con baja bancarización.</p>
         <form action="https://formspree.io/f/your-form-id" method="POST" class="formulario-contacto">
           <input type="text" name="name" placeholder="Tu Nombre" required>
           <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-          <textarea name="message" placeholder="Mensaje o detalles de tu interés" required></textarea>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
           <button type="submit" class="btn-primary">Solicitar Información</button>
         </form>
       `;

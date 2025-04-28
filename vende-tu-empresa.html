@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Presentar Mi Empresa - Salvadé Ventures</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -18,8 +18,8 @@
       <a href="index.html#inicio">Inicio</a>
       <a href="index.html#quienes-somos">Quiénes Somos</a>
       <a href="index.html#servicios">Servicios</a>
-      <a href="index.html#entidades">Entidades Disponibles</a>
-      <a href="vende-tu-empresa.html">Vende tu Empresa</a>
+      <a href="index.html#entidades">Entidades</a>
+      <a href="vende-tu-empresa.html">Vender Mi Empresa</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </div>
@@ -28,27 +28,27 @@
 <section id="vende" class="section" data-aos="fade-up">
   <div class="container">
     <h2>Presentar Mi Empresa</h2>
-    <p>En Salvadé Ventures entendemos que vender tu empresa no es simplemente cerrar una operación; es proyectar el valor de años de esfuerzo hacia nuevas oportunidades. Si quieres explorar una venta estratégica, completa el siguiente formulario confidencialmente.</p>
+    <p>¿Buscas una salida estratégica o maximizar el valor de tu empresa? En Salvadé Ventures podemos ayudarte a estructurar la operación ideal. Completa el formulario y nos pondremos en contacto contigo con absoluta confidencialidad.</p>
 
     <form action="https://formspree.io/f/xkgrgarv" method="POST" class="formulario-contacto">
       <input type="text" name="name" placeholder="Tu Nombre Completo" required>
       <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
       <input type="text" name="empresa" placeholder="Nombre de la Empresa" required>
       <select name="tipo" required>
-        <option value="">Selecciona el Tipo de Entidad</option>
+        <option value="">Tipo de Entidad</option>
         <option value="SOFOM">SOFOM</option>
         <option value="SOFIPO">SOFIPO</option>
-        <option value="IFPE">IFPE (Fintech)</option>
+        <option value="IFPE">IFPE</option>
         <option value="Unión de Crédito">Unión de Crédito</option>
         <option value="IFC">IFC</option>
         <option value="Otra">Otra</option>
       </select>
-      <textarea name="message" placeholder="Comentarios adicionales (ubicación, antigüedad, tamaño de cartera, permisos)" required></textarea>
+      <textarea name="message" placeholder="Comentarios adicionales (ubicación, cartera, etc.)" required></textarea>
       <button type="submit" class="btn-primary">Enviar Información</button>
     </form>
 
     <div class="contact-buttons">
-      <a href="https://wa.me/xxxxxxxxxx" target="_blank" class="btn-whatsapp">Hablar por WhatsApp</a>
+      <a href="https://wa.me/5492236689748?text=Hola%20Salvadé%20Ventures%2C%20estoy%20interesado%20en%20presentar%20mi%20empresa%20para%20una%20posible%20venta." target="_blank" class="btn-whatsapp">Hablar por WhatsApp</a>
       <a href="https://www.linkedin.com/company/salvade-ventures" target="_blank" class="btn-linkedin">Visitar LinkedIn</a>
     </div>
 
@@ -57,16 +57,13 @@
 
 <footer>
   <div class="container">
-    <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
+    <p>© 2025 Salvadé Ventures. Strategic Financial Advisory. All rights reserved.</p>
   </div>
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init({
-    once: true,
-    duration: 1200,
-  });
+  AOS.init({ once: true, duration: 1200 });
 </script>
 
 </body>

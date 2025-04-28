@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Salvadé Ventures</title>
+  <title>Salvadé Ventures - Strategic Financial Advisory</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -15,48 +15,45 @@
   <div class="header-container">
     <img src="logo.png" alt="Salvadé Ventures" class="logo-img">
     <nav>
-      <a href="index.html#inicio">Inicio</a>
-      <a href="index.html#quienes-somos">Quiénes Somos</a>
-      <a href="index.html#servicios">Servicios</a>
-      <a href="index.html#entidades">Entidades Disponibles</a>
-      <a href="vende-tu-empresa.html">Vende tu Empresa</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#quienes-somos">Quiénes Somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#entidades">Entidades</a>
+      <a href="vende-tu-empresa.html">Vender Mi Empresa</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </div>
 </header>
 
-<section id="contacto" class="section" data-aos="fade-up">
-  <div class="container">
-    <h2>Contacto</h2>
-    <p>En Salvadé Ventures trabajamos cada conversación como el inicio de una nueva oportunidad. Si deseas obtener más información sobre nuestros servicios o explorar una colaboración estratégica, completa el formulario o contáctanos directamente.</p>
-
-    <form action="https://formspree.io/f/xpwdwedl" method="POST" class="formulario-contacto">
-      <input type="text" name="name" placeholder="Tu Nombre Completo" required>
-      <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-      <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-      <button type="submit" class="btn-primary">Enviar Mensaje</button>
-    </form>
-
+<section id="inicio" class="hero">
+  <div class="background-image"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <img src="logotipo-solo.png" alt="Salvadé Ventures Logo" class="hero-logo">
+    <h1>Salvadé Ventures</h1>
+    <p>Strategic Financial Advisory for Elite Transactions</p>
+    <div class="cta-buttons">
+      <a href="#entidades" class="btn-primary">Explorar Entidades</a>
+      <a href="vende-tu-empresa.html" class="btn-secondary">Presentar Mi Empresa</a>
+    </div>
     <div class="contact-buttons">
-      <a href="https://wa.me/xxxxxxxxxx" target="_blank" class="btn-whatsapp">Hablar por WhatsApp</a>
+      <a href="https://wa.me/5492236689748?text=Hola%20Salvadé%20Ventures%2C%20estoy%20interesado%20en%20conocer%20más%20sobre%20sus%20oportunidades." target="_blank" class="btn-whatsapp">Hablar por WhatsApp</a>
       <a href="https://www.linkedin.com/company/salvade-ventures" target="_blank" class="btn-linkedin">Visitar LinkedIn</a>
     </div>
-
   </div>
 </section>
 
+<!-- (todo el contenido de secciones sigue como ya lo tenías) -->
+
 <footer>
   <div class="container">
-    <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
+    <p>© 2025 Salvadé Ventures. Strategic Financial Advisory. All rights reserved.</p>
   </div>
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init({
-    once: true,
-    duration: 1200,
-  });
+  AOS.init({ once: true, duration: 1200 });
 </script>
 
 </body>
