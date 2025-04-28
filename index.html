@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salvadé Ventures</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -17,155 +17,154 @@
 
 <!-- Header -->
 <header>
-  <div class="logo-header">Salvadé Ventures</div>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#quienes-somos">Quiénes Somos</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#entidades">Tipos de Entidades</a>
-    <a href="#vender">Vende tu Empresa</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <div class="header-container">
+    <img src="logo.png" alt="Logo Salvadé Ventures" class="logo-img">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#quienes-somos">Quiénes Somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#entidades">Entidades a la Venta</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
 </header>
 
 <!-- Hero Section -->
 <section id="inicio" class="hero">
-  <h1>Salvadé Ventures</h1>
-  <p>Tailored Solutions for Mergers & Acquisitions</p>
-</section>
-
-<!-- Quiénes Somos -->
-<section id="quienes-somos">
-  <h2>Quiénes Somos</h2>
-  <p>Salvadé Ventures es una firma boutique de M&A enfocada en originar, estructurar y ejecutar transacciones estratégicas de entidades financieras reguladas en América Latina. Brindamos asesoría ágil, precisa y exclusiva para maximizar el valor de cada operación.</p>
-</section>
-
-<!-- Servicios -->
-<section id="servicios">
-  <h2>Servicios</h2>
-  <div class="servicios-grid">
-    <div class="servicio-card">
-      <h3>Fusiones y Adquisiciones (M&A)</h3>
-      <p>Asesoría completa en compra-venta de activos financieros estratégicos.</p>
-    </div>
-    <div class="servicio-card">
-      <h3>Originación de Oportunidades</h3>
-      <p>Identificamos oportunidades exclusivas antes de llegar al mercado.</p>
-    </div>
-    <div class="servicio-card">
-      <h3>Consultoría Estratégica</h3>
-      <p>Optimización estructural y expansión corporativa.</p>
-    </div>
-    <div class="servicio-card">
-      <h3>Consultoría en Reestructuración</h3>
-      <p>Asistencia integral en procesos de reorganización empresarial.</p>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Salvadé Ventures</h1>
+    <p class="slogan">Tailored Solutions for Mergers & Acquisitions</p>
+    <div class="cta-buttons">
+      <a href="#entidades" class="btn-primary">Explorar Entidades</a>
+      <a href="contacto.html" class="btn-secondary">Contáctanos</a>
     </div>
   </div>
 </section>
 
-<!-- Tipos de Entidades -->
-<section id="entidades">
-  <h2>Tipos de Entidades</h2>
-  <div class="entidades-grid">
-    <div class="entidad-card" onclick="openModal('SOFOM')">
-      <h3>SOFOM</h3>
-      <p>Sociedad Financiera de Objeto Múltiple</p>
+<!-- Quiénes Somos -->
+<section id="quienes-somos" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Quiénes Somos</h2>
+    <p>
+      Salvadé Ventures es una firma boutique especializada en fusiones y adquisiciones estratégicas de entidades financieras en América Latina.  
+      Combinando experiencia en originación de oportunidades, estructuración y ejecución de transacciones, nos posicionamos como un aliado clave para corporativos, family offices y fondos de inversión.  
+      Contamos con más de una década de trayectoria en la identificación de activos estratégicos, trabajando directamente con reguladores y estructuras financieras sofisticadas.  
+      Nuestra propuesta de valor se centra en la agilidad operativa, el acceso a activos exclusivos y una comprensión profunda del marco normativo en mercados emergentes.  
+      Ofrecemos soluciones a medida que maximizan el valor de cada operación, anticipándonos a las necesidades del comprador o inversor institucional.  
+      Salvadé Ventures combina la eficiencia de un boutique con el alcance y visión global necesarias para construir transacciones de alto impacto y durabilidad.  
+    </p>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>M&A (Fusiones y Adquisiciones)</h3>
+        <p>Asesoramiento completo en la compra y venta de activos estratégicos financieros.</p>
+      </div>
+      <div class="card">
+        <h3>Originación de Oportunidades</h3>
+        <p>Identificamos y desarrollamos activos de alta calidad listos para adquisición.</p>
+      </div>
+      <div class="card">
+        <h3>Consultoría Estratégica</h3>
+        <p>Optimizamos estructuras corporativas para maximizar crecimiento y valor.</p>
+      </div>
+      <div class="card">
+        <h3>Consultoría en Reestructuración</h3>
+        <p>Asistimos en reorganización de entidades para su fortalecimiento operativo y financiero.</p>
+      </div>
     </div>
-    <div class="entidad-card" onclick="openModal('SOFIPO')">
-      <h3>SOFIPO</h3>
-      <p>Sociedad Financiera Popular</p>
-    </div>
-    <div class="entidad-card" onclick="openModal('IFPE')">
-      <h3>IFPE (Fintech)</h3>
-      <p>Institución de Fondos de Pago Electrónico</p>
-    </div>
-    <div class="entidad-card" onclick="openModal('UnionCredito')">
-      <h3>Unión de Crédito</h3>
-      <p>Unión de instituciones de financiamiento</p>
-    </div>
-    <div class="entidad-card" onclick="openModal('IFC')">
-      <h3>IFC</h3>
-      <p>Institución Financiera Comunitaria</p>
-    </div>
-    <div class="entidad-card" onclick="openModal('Otros')">
-      <h3>Otros</h3>
-      <p>Entidades Especiales</p>
+  </div>
+</section>
+
+<!-- Entidades a la Venta -->
+<section id="entidades" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Entidades a la Venta</h2>
+    <div class="grid">
+      <div class="card entidad" onclick="openModal('SOFOM')">
+        <h3>SOFOM</h3>
+        <p>Sociedad Financiera de Objeto Múltiple</p>
+      </div>
+      <div class="card entidad" onclick="openModal('SOFIPO')">
+        <h3>SOFIPO</h3>
+        <p>Sociedad Financiera Popular</p>
+      </div>
+      <div class="card entidad" onclick="openModal('IFPE')">
+        <h3>IFPE (Fintech)</h3>
+        <p>Institución de Fondos de Pago Electrónico</p>
+      </div>
+      <div class="card entidad" onclick="openModal('UnionCredito')">
+        <h3>Unión de Crédito</h3>
+        <p>Financiamiento colectivo estratégico</p>
+      </div>
+      <div class="card entidad" onclick="openModal('IFC')">
+        <h3>IFC</h3>
+        <p>Institución Financiera Comunitaria</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Tabla Comparativa -->
-<section id="comparativa">
-  <h2>Comparativa de Capacidades</h2>
-  <table>
-    <tr>
-      <th>Entidad</th>
-      <th>Captar Depósitos</th>
-      <th>Emitir Tarjetas</th>
-      <th>Otorgar Créditos</th>
-      <th>Custodiar Fondos</th>
-      <th>Flexibilidad Operativa</th>
-    </tr>
-    <tr>
-      <td>SOFOM</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>Alta</td>
-    </tr>
-    <tr>
-      <td>SOFIPO</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>Media</td>
-    </tr>
-    <tr>
-      <td>IFPE (Fintech)</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>Alta</td>
-    </tr>
-    <tr>
-      <td>Unión de Crédito</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>Baja</td>
-    </tr>
-    <tr>
-      <td>IFC</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>Media</td>
-    </tr>
-    <tr>
-      <td>Otros</td><td>Depende</td><td>Depende</td><td>Depende</td><td>Depende</td><td>Variable</td>
-    </tr>
-  </table>
-</section>
-
-<!-- Vender tu Empresa -->
-<section id="vender">
-  <h2>¿Tienes una entidad financiera que deseas vender?</h2>
-  <p>Completa el formulario y nuestro equipo evaluará tu caso de forma personalizada.</p>
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <input type="text" name="name" placeholder="Nombre Completo" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="text" name="entidad" placeholder="Tipo de Entidad" required>
-    <textarea name="message" placeholder="Mensaje"></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
-
-<!-- Contacto General -->
-<section id="contacto">
-  <h2>Contacto</h2>
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <input type="text" name="name" placeholder="Tu Nombre" required>
-    <input type="email" name="email" placeholder="Tu Email" required>
-    <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-  <div class="contacto-links">
-    <a href="https://wa.me/5492236689748" target="_blank">WhatsApp</a> |
-    <a href="https://www.linkedin.com/company/salvade-ventures/" target="_blank">LinkedIn</a>
+<section id="comparativa" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Comparativa de Capacidades</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Entidad</th>
+          <th>Captar Depósitos</th>
+          <th>Emitir Tarjetas</th>
+          <th>Otorgar Créditos</th>
+          <th>Custodiar Fondos</th>
+          <th>Flexibilidad Operativa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SOFOM</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>Alta</td>
+        </tr>
+        <tr>
+          <td>SOFIPO</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>Media</td>
+        </tr>
+        <tr>
+          <td>IFPE (Fintech)</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>Alta</td>
+        </tr>
+        <tr>
+          <td>Unión de Crédito</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>Baja</td>
+        </tr>
+        <tr>
+          <td>IFC</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>Media</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</section>
+
+<!-- Call to Action para Vender tu Empresa -->
+<section class="cta-vender" data-aos="fade-up">
+  <h2>¿Tienes una Entidad Financiera que deseas vender?</h2>
+  <a href="vende-tu-empresa.html" class="btn-primary">Presentar mi Empresa</a>
 </section>
 
 <!-- Footer -->
 <footer>
-  <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
+  <div class="container">
+    <p>© 2025 Salvadé Ventures. Todos los derechos reservados.</p>
+  </div>
 </footer>
 
-<!-- Modal Structure (para modales de entidades) -->
+<!-- Modal -->
 <div id="modal" class="modal">
   <div class="modal-content" id="modal-content">
-    <!-- Acá se llena dinámicamente -->
+    <!-- Se llena dinámicamente -->
   </div>
-  <button onclick="closeModal()">Cerrar</button>
+  <button onclick="closeModal()" class="btn-secondary">Cerrar</button>
 </div>
 
 </body>

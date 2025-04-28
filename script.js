@@ -1,5 +1,10 @@
-// Script para manejar la apertura y cierre de modales de entidades
+// Animación simple para ocultar el loader
+window.addEventListener('load', function() {
+  const loader = document.getElementById('loader');
+  loader.classList.add('fade-out');
+});
 
+// Modal para entidades
 function openModal(entidad) {
   const modal = document.getElementById('modal');
   const content = document.getElementById('modal-content');
@@ -11,12 +16,14 @@ function openModal(entidad) {
       info = `
         <h2>SOFOM</h2>
         <p><strong>Sociedad Financiera de Objeto Múltiple</strong><br>
-        Entidad que otorga créditos, arrendamientos financieros y/o factoraje. No puede captar depósitos.</p>
-        <ul>
-          <li><strong>Ventajas:</strong> Flexibilidad operativa, proceso de autorización ágil.</li>
-          <li><strong>Desventajas:</strong> No puede captar recursos del público.</li>
-          <li><strong>Alcance:</strong> México.</li>
-        </ul>
+        Entidad especializada en otorgamiento de créditos, arrendamientos financieros y factoraje.</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="hidden" name="entidad" value="SOFOM">
+          <input type="text" name="name" placeholder="Tu Nombre" required>
+          <input type="email" name="email" placeholder="Tu Email" required>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+          <button type="submit" class="btn-primary">Solicitar Información</button>
+        </form>
       `;
       break;
 
@@ -24,12 +31,14 @@ function openModal(entidad) {
       info = `
         <h2>SOFIPO</h2>
         <p><strong>Sociedad Financiera Popular</strong><br>
-        Entidad regulada que puede captar depósitos del público y otorgar créditos.</p>
-        <ul>
-          <li><strong>Ventajas:</strong> Captación, créditos, protección regulatoria.</li>
-          <li><strong>Desventajas:</strong> Regulación estricta.</li>
-          <li><strong>Alcance:</strong> Nacional.</li>
-        </ul>
+        Entidad que capta depósitos y otorga créditos a sectores populares bajo regulación estricta.</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="hidden" name="entidad" value="SOFIPO">
+          <input type="text" name="name" placeholder="Tu Nombre" required>
+          <input type="email" name="email" placeholder="Tu Email" required>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+          <button type="submit" class="btn-primary">Solicitar Información</button>
+        </form>
       `;
       break;
 
@@ -37,25 +46,29 @@ function openModal(entidad) {
       info = `
         <h2>IFPE (Fintech)</h2>
         <p><strong>Institución de Fondos de Pago Electrónico</strong><br>
-        Entidad que puede custodiar y transferir fondos electrónicos.</p>
-        <ul>
-          <li><strong>Ventajas:</strong> Innovación digital, operaciones inmediatas.</li>
-          <li><strong>Desventajas:</strong> Limitado en oferta de crédito.</li>
-          <li><strong>Alcance:</strong> Digital, nacional e internacional.</li>
-        </ul>
+        Entidad autorizada para custodia y transferencias de fondos digitales.</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="hidden" name="entidad" value="IFPE">
+          <input type="text" name="name" placeholder="Tu Nombre" required>
+          <input type="email" name="email" placeholder="Tu Email" required>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+          <button type="submit" class="btn-primary">Solicitar Información</button>
+        </form>
       `;
       break;
 
     case 'UnionCredito':
       info = `
         <h2>Unión de Crédito</h2>
-        <p><strong>Asociación de personas físicas y morales</strong><br>
-        Para obtener financiamiento colectivo a tasas competitivas.</p>
-        <ul>
-          <li><strong>Ventajas:</strong> Crédito para socios, beneficios fiscales.</li>
-          <li><strong>Desventajas:</strong> Restricciones operativas.</li>
-          <li><strong>Alcance:</strong> México.</li>
-        </ul>
+        <p><strong>Asociaciones cooperativas</strong><br>
+        Especializadas en financiamiento colectivo entre socios.</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="hidden" name="entidad" value="Unión de Crédito">
+          <input type="text" name="name" placeholder="Tu Nombre" required>
+          <input type="email" name="email" placeholder="Tu Email" required>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+          <button type="submit" class="btn-primary">Solicitar Información</button>
+        </form>
       `;
       break;
 
@@ -63,24 +76,14 @@ function openModal(entidad) {
       info = `
         <h2>IFC</h2>
         <p><strong>Institución Financiera Comunitaria</strong><br>
-        Entidad especializada en servicios financieros para zonas rurales o sectores vulnerables.</p>
-        <ul>
-          <li><strong>Ventajas:</strong> Impacto social, acceso a fondeo gubernamental.</li>
-          <li><strong>Desventajas:</strong> Segmento limitado, alta supervisión.</li>
-          <li><strong>Alcance:</strong> México.</li>
-        </ul>
-      `;
-      break;
-
-    case 'Otros':
-      info = `
-        <h2>Otros Tipos de Entidades</h2>
-        <p>Contamos también con estructuras personalizadas para proyectos financieros especiales.</p>
-        <ul>
-          <li><strong>Ventajas:</strong> Adaptabilidad a necesidades específicas.</li>
-          <li><strong>Desventajas:</strong> Evaluación caso por caso.</li>
-          <li><strong>Alcance:</strong> Variable según estructura.</li>
-        </ul>
+        Entidad enfocada en promover inclusión financiera en comunidades específicas.</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="hidden" name="entidad" value="IFC">
+          <input type="text" name="name" placeholder="Tu Nombre" required>
+          <input type="email" name="email" placeholder="Tu Email" required>
+          <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+          <button type="submit" class="btn-primary">Solicitar Información</button>
+        </form>
       `;
       break;
   }
@@ -92,3 +95,18 @@ function openModal(entidad) {
 function closeModal() {
   document.getElementById('modal').style.display = "none";
 }
+
+// AOS (Animate On Scroll) simple para no cargar librerías pesadas
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('aos-animate');
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-aos]').forEach(el => {
+    observer.observe(el);
+  });
+});
