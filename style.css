@@ -61,7 +61,6 @@ nav a:hover {
 /* Hero */
 .hero {
   height: 100vh;
-  background: url('atardeceres-cdmx-2021-.jpg') center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -70,6 +69,7 @@ nav a:hover {
   text-align: center;
   color: #c2a176;
 }
+
 
 .hero-overlay {
   position: absolute;
